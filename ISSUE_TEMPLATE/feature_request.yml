@@ -1,0 +1,26 @@
+name: Feature
+description: New capability or a change to existing behaviour
+labels: [feature]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or goal
+      description: What the user or business needs, not the solution.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed approach
+      description: Optional - leave blank for the agent to propose.
+  - type: textarea
+    id: done
+    attributes:
+      label: Acceptance criteria
+      description: How we'll know it's done. Agents work to this list.
+      placeholder: |
+        - [ ]
+        - [ ]
+    validations:
+      required: true

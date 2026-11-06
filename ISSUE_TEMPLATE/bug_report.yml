@@ -1,0 +1,36 @@
+name: Bug
+description: Something is broken or behaves wrongly
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you saw, and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version / build / environment
+      placeholder: e.g. iOS 26.1, app 1.2.0 (45)
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - Low - cosmetic or workaround exists
+        - Medium - feature impaired
+        - High - data loss, crash, or users blocked
+    validations:
+      required: true
